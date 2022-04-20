@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> LOG IN PAGE</title>
+   <link rel="stylesheet" href="demo.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="hero">
+  <div class="form-box">
+    <div class="button-box">
+      <div id="btn"></div>
+      <button type="button" class="toggle-btn" onclick="login()">Login</button>
+       <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+    <div class="social-icons">
+    <img src="fb.png">
+    <img src="tw.png">
+    <img src="gp.png">
+  </div>
+  <form id="login" class="input-group">
+     <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input type="text" class="input-field" placeholder="User Name" required>
+     <h6><p>* must contain 6-9 characters</p></h6></div><br>
+      <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input type="password"  class="input-field" placeholder="Password" required></div>
+     <h6><p>* password must be between 8 to 14 characters, mixture of both uppercase and lowercase letters,
+ mixture of letters and numbers,Inclusion of at least one special character, e.g., ! @ # ?</p></h6>
+    <input type="checkbox" class="check-box"><span>Remember Password</span>
+     <a href="demoproject.html"><button type="submit" class="submit-btn">Log In</button></a>
+     <h5 style="text-align:left;color: darkred;"> Forgetten password?</h5>
+  </form>
+   <form id="register" class="input-group">
+    <input type="text" class="input-field" placeholder="Full Name" required>
+    <h6><p>* with initial</p></h6>
+        <input type="date" class="input-field" placeholder="DD/MM/YYYY" required>
+            <input type="text" class="input-field" placeholder="Qualification" required>
+    <input type="email" class="input-field" placeholder="Email Id" required>
+    <input type="password" class="input-field" placeholder=" Create Password" required>
+    <h6><p>*password must be between 8 to 14 characters,
+ mixture of letters and numbers,Inclusion of at least one special character, e.g., ! @ # ?</p></h6>
+    <input type="checkbox" class="check-box" ><span>I agree the terms & conditions</span>
+    <button type="submit" class="submit-btn">Register</button>
+  </form>
+  </div>
+</div>
+<script>
+  var x = document.getElementById("login");
+  var y = document.getElementById("register");
+  var z = document.getElementById("btn");
+
+  function register()
+  {
+    x.style.left = "-400px";
+    y.style.left = "50px";
+    z.style.left = "110px";
+  }
+  function login()
+  {
+    x.style.left="50px";
+    y.style.left="450px";
+    z.style.left="0";
+  }
+</script>
+</body>
+</html>
